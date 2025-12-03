@@ -1,0 +1,1122 @@
+/*
+ * ==========================================
+ * EDUCATIONAL PROJECT - Netflix UI Clone
+ * ==========================================
+ * 
+ * Author: Tirth Dadhaniya
+ * Purpose: Educational demonstration of HTML/CSS skills
+ * 
+ * DISCLAIMER:
+ * - This is NOT affiliated with Netflix Inc.
+ * - This does NOT collect any user data
+ * - This is a static CSS file for UI demonstration only
+ * - All form inputs are intentionally disabled
+ * 
+ * GitHub: https://github.com/TirthDadhaniya/netflix-clone
+ * ==========================================
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #000000;
+}
+
+.hero {
+  background-image: url(res/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  z-index: 2;
+}
+
+.hero-ct {
+  min-height: 100vh;
+  width: 80%;
+  margin: 0px auto;
+  padding: 22px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.right-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+
+.btn {
+  background-color: rgb(232, 25, 25);
+  border: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 3px;
+}
+
+.btn:first-child {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.387);
+}
+
+.btn:hover {
+  background-color: rgb(189, 19, 19);
+  cursor: pointer;
+}
+
+.btn:first-child:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.387);
+}
+
+.btn-small {
+  display: none;
+}
+
+.heading {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-ct {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+.heading1 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.heading1 h1 {
+  font-size: 52px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 130%;
+  margin: 0px 0px 10px 0px;
+}
+
+.heading1 h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0px 0px 35px 0px;
+  padding: 0;
+}
+
+.heading2 {
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.heading2 p {
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 10px;
+  flex: 1 1 0;
+}
+
+.email {
+  flex: 1 1 0;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 15px;
+  border-radius: 3px;
+  background-color: rgba(43, 38, 38, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.387);
+}
+
+.getstarted {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 11px 20px;
+  border-radius: 3px;
+  background-color: rgb(232, 25, 25);
+  border: none;
+}
+
+.getstarted:hover {
+  background-color: rgb(189, 19, 19);
+  cursor: pointer;
+}
+
+.separation {
+  height: 7px;
+  background-color: rgb(46, 44, 44);
+  width: 100%;
+  position: relative;
+  z-index: 20;
+  flex-shrink: 0;
+}
+
+.adds {
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0px;
+  gap: 30px;
+}
+
+.add1 {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.content h3 {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0;
+}
+
+.add1-img {
+  position: relative;
+
+}
+
+.add1-img img {
+  width: 500px;
+  position: relative;
+  z-index: 10;
+}
+
+.add1-img video {
+  position: absolute;
+  top: 76px;
+  right: 65px;
+  width: 370px;
+}
+
+.add2 {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 60px;
+}
+
+.add2-img {
+  position: relative;
+}
+
+.add2-img img {
+  position: relative;
+  width: 280px;
+  z-index: 10;
+}
+
+.faq {
+  width: 70%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  gap: 10px;
+  flex: 1 1 0;
+  margin-top: 50px;
+}
+
+.faq h1 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+}
+
+.faq-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  flex: 1 1 0;
+}
+
+.que {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 1 0;
+  background-color: rgb(45 45 45);
+  padding: 20px;
+}
+
+.que h3 {
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.que:hover {
+  background-color: rgb(35 35 35);
+  cursor: pointer;
+}
+
+.faq-solo img {
+  width: 30px;
+  height: 30px;
+}
+
+footer {
+  width: 70%;
+  margin: 0px auto;
+  color: white;
+  padding: 60px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.footer-mail {
+  width: 77%;
+  margin: 0px auto;
+}
+
+.footer2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.call {
+  width: 100%;
+}
+
+.call h5 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.footer-end {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-end p {
+  display: inline;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-end p:hover {
+  cursor: pointer;
+}
+
+/* ==========================================
+   EDUCATIONAL PROJECT STYLES
+   This Netflix UI clone is for learning purposes only.
+   Created by: Tirth Dadhaniya
+   ========================================== */
+
+.demo-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #1a1a2e 0%, #16213e 50%, #1a1a2e 100%);
+  border-bottom: 2px solid #e50914;
+  color: #fff;
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 13px;
+  font-weight: 500;
+  z-index: 9999;
+  box-shadow: 0 2px 10px rgba(229, 9, 20, 0.3);
+}
+
+.demo-banner p {
+  margin: 0;
+  padding: 0;
+}
+
+.demo-banner strong {
+  color: #e50914;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.demo-banner a {
+  color: #64b5f6;
+  text-decoration: underline;
+  margin-left: 5px;
+}
+
+.demo-banner a:hover {
+  color: #90caf9;
+}
+
+/* Educational Credit Footer */
+.edu-credit {
+  width: 100%;
+  background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%);
+  border-top: 1px solid #333;
+  padding: 20px;
+  text-align: center;
+}
+
+.edu-credit p {
+  color: #888;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.edu-credit a {
+  color: #e50914;
+  text-decoration: none;
+}
+
+.edu-credit a:hover {
+  text-decoration: underline;
+}
+
+/* Disabled input/button styles for demo */
+input:disabled,
+button:disabled {
+  opacity: 0.9;
+  cursor: not-allowed !important;
+}
+
+button:disabled:hover {
+  background-color: rgb(232, 25, 25) !important;
+}
+
+/* Offset for fixed banner */
+.main-container {
+  padding-top: 45px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+  .logo img {
+    width: 130px;
+    position: relative;
+    z-index: 3;
+  }
+
+  .btn {
+    padding: 4px 13px;
+  }
+
+  .heading-ct {
+    width: 70%;
+  }
+
+  .heading1 h1 {
+    font-size: 48px;
+  }
+
+  .heading1 h3 {
+    font-size: 18px;
+  }
+
+  .heading2 p {
+    font-size: 13px;
+  }
+
+  .email {
+    padding: 13px;
+  }
+
+  .getstarted {
+    font-size: 18px;
+    padding: 10px 18px;
+  }
+
+  .separation {
+    height: 6px;
+  }
+
+  .add1 {
+    width: 80%;
+  }
+
+  .content h1 {
+    font-size: 38px;
+  }
+
+  .content h3 {
+    font-size: 15px;
+  }
+
+  .add1-img img {
+    width: 450px;
+  }
+
+  .add1-img video {
+    position: absolute;
+    top: 69px;
+    right: 63px;
+    width: 330px;
+  }
+
+  .add2 {
+    width: 80%;
+  }
+
+  .add2-img img {
+    width: 230px;
+  }
+
+  .faq h1 {
+    font-size: 22px;
+  }
+
+  .que {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .que h3 {
+    font-size: 20px;
+  }
+
+  .que img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .call h5 {
+    font-size: 15px;
+  }
+
+  .footer-end {
+    gap: 8px;
+  }
+
+  .footer-end p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 991.98px) and (min-width: 768px) {
+
+  .logo {
+    width: 120px;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 4px 13px;
+  }
+
+  .heading-ct {
+    width: 75%;
+  }
+
+  .heading1 h1 {
+    font-size: 48px;
+  }
+
+  .heading1 h3 {
+    font-size: 18px;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .heading2 {
+    gap: 8px;
+  }
+
+  .heading2 p {
+    font-size: 14px;
+  }
+
+  .email {
+    padding: 13px;
+  }
+
+  .getstarted {
+    font-size: 18px;
+    padding: 10px 18px;
+  }
+
+  .separation {
+    height: 6px;
+  }
+
+  .adds {
+    padding: 50px 0px;
+    gap: 24px;
+  }
+
+  .add1 {
+    width: 85%;
+  }
+
+  .content h1 {
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  .content h3 {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0;
+  }
+
+  .add1-img img {
+    width: 400px;
+  }
+
+  .add1-img video {
+    position: absolute;
+    top: 61px;
+    right: 54px;
+    width: 294px;
+  }
+
+  .add2 {
+    width: 85%;
+    gap: 46px;
+  }
+
+  .add2-img img {
+    width: 200px;
+  }
+
+  .faq h1 {
+    font-size: 22px;
+  }
+
+  .faq-box {
+    gap: 6px;
+  }
+
+  .que {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .que h3 {
+    font-size: 20px;
+  }
+
+  .que img {
+    width: 28px;
+    height: 28px;
+  }
+
+  footer {
+    padding: 60px 0px;
+    gap: 50px;
+  }
+
+  .footer-mail {
+    width: 75%;
+  }
+
+  .footer2 {
+    width: 100%;
+    gap: 36px;
+  }
+
+  .call h5 {
+    font-size: 15px;
+  }
+
+  .footer-end {
+    gap: 8px;
+  }
+
+  .footer-end p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 767.98px) and (min-width: 576px) {
+
+  .hero-ct {
+    width: 85%;
+    padding: 20px 0px;
+  }
+
+  .logo {
+    width: 100px;
+
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 4px 13px;
+  }
+
+  .heading-ct {
+    width: 65%;
+  }
+
+  .heading1 h1 {
+    font-size: 44px;
+    line-height: 125%;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .heading1 h3 {
+    font-size: 16px;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .heading2 {
+    gap: 8px;
+  }
+
+  .email {
+    font-size: 12px;
+    padding: 12px;
+  }
+
+  .getstarted {
+    font-size: 16px;
+    padding: 10px 18px;
+  }
+
+  .separation {
+    height: 6px;
+  }
+
+  .adds {
+    padding: 40px 0px;
+  }
+
+  .add1 {
+    width: 85%;
+  }
+
+  .content {
+    gap: 8px;
+  }
+
+  .content h1 {
+    font-size: 34px;
+  }
+
+  .content h3 {
+    font-size: 14px;
+  }
+
+  .add1-img img {
+    width: 450px;
+  }
+
+  .add1-img video {
+    position: absolute;
+    top: 69px;
+    right: 62px;
+    width: 330px;
+  }
+
+  .add2 {
+    width: 85%;
+    gap: 40px;
+  }
+
+  .add2-img img {
+    position: relative;
+    width: 220px;
+    z-index: 10;
+  }
+
+  .faq {
+    width: 80%;
+  }
+
+  .faq h1 {
+    font-size: 20px;
+  }
+
+  .faq-box {
+    gap: 6px;
+  }
+
+  .que {
+    padding: 14px;
+  }
+
+  .que h3 {
+    font-size: 18px;
+  }
+
+  .que img {
+    width: 26px;
+    height: 26px;
+  }
+
+  footer {
+    width: 80%;
+    padding: 60px 0px;
+    gap: 50px;
+  }
+
+  .footer-mail {
+    width: 70%;
+  }
+
+  .footer2 {
+    gap: 34px;
+  }
+
+  .call h5 {
+    font-size: 14px;
+  }
+
+  .footer-end {
+    gap: 6px;
+  }
+
+  .footer-end p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 575.98px) {
+
+  .hero {
+    height: 85vh;
+    min-height: auto;
+  }
+
+  .hero-ct {
+    height: 85vh;
+    min-height: 85vh;
+    width: 100%;
+  }
+
+  .navbar {
+    width: 90%;
+    margin: 0px auto;
+  }
+
+  .logo {
+    width: auto;
+    height: auto;
+    padding-top: 5px;
+    position: relative;
+    z-index: 3;
+  }
+
+  .logo img {
+    height: 30px;
+  }
+
+  .btn-eng {
+    display: none;
+  }
+
+  .heading-ct {
+    width: 90%;
+  }
+
+  .heading1 h1 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 130%;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .heading1 h3 {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0px 0px 20px 0px;
+    padding: 0;
+  }
+
+  .heading2 {
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .heading2 p {
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    padding: 0;
+  }
+
+  .details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 6px;
+    flex: 1 1 0;
+  }
+
+  .email {
+    width: 70vw;
+    font-size: 10px;
+    font-weight: 300;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: rgba(43, 38, 38, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.387);
+  }
+
+  .getstarted {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 3px;
+    background-color: rgb(232, 25, 25);
+    border: none;
+  }
+
+  .getstarted:hover {
+    background-color: rgb(189, 19, 19);
+    cursor: pointer;
+  }
+
+  .separation {
+    height: 4px;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .adds {
+    width: 90%;
+    margin: 0px auto;
+    padding: 40px 0px 60px 0px;
+    gap: 60px;
+  }
+
+  .add1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 20px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .content h1 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 130%;
+    text-align: center;
+  }
+
+  .content h3 {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0;
+    text-align: center;
+  }
+
+  .add1-img img {
+    width: 320px;
+  }
+
+  .add1-img video {
+    position: absolute;
+    top: 48px;
+    right: 44px;
+    width: 235px;
+  }
+
+  .add2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 20px;
+  }
+
+  .add2-img img {
+    position: relative;
+    width: 180px;
+    z-index: 10;
+  }
+
+  .faq {
+    width: 90%;
+    margin: 0px auto;
+    padding: 60px 0px;
+    align-items: center;
+    gap: 10px;
+    flex: 1 1 0;
+  }
+
+  .faq h1 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .faq-box {
+    gap: 5px;
+    flex: 1 1 0;
+  }
+
+  .que {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .que h3 {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .que img {
+    width: 22px;
+    height: 22px;
+  }
+
+  footer {
+    width: 90%;
+    padding: 20px 0px;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .footer-mail {
+    width: 70%;
+    margin: 0px auto;
+  }
+
+  .footer-mail p {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .footer2 {
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .call {
+    width: 100%;
+  }
+
+  .call h5 {
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  .footer-end {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(15, auto);
+    gap: 0px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-end p {
+    display: inline;
+    font-size: 10px;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+  }
+}
