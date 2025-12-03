@@ -54,7 +54,7 @@ This project was created to:
 
 ## Live Demo
 
-You can view the live demo of the Netflix landing page clone here: [Live Demo](https://tirthdadhaniya.github.io/netflix-clone/)
+You can view the live demo of the Netflix landing page clone here: [Live Demo](https://netflix.tirthdadhaniya.me/)
 
 ## Usage
 
