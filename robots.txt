@@ -1,0 +1,10 @@
+# robots.txt for Educational Netflix UI Clone
+# This project is for educational/portfolio purposes only
+# Not intended for search engine indexing
+
+User-agent: *
+Disallow: /
+
+# This is a static HTML/CSS educational demo
+# No data collection or backend functionality
+# Created by Tirth Dadhaniya for learning purposes
