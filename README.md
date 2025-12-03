@@ -47,10 +47,10 @@ This project was created to:
 
 ## Screenshots
 
-![Screenshot 2025-06-23 220136](https://github.com/user-attachments/assets/6be24d6f-33d1-4091-8894-c698c48b6798)
-![Screenshot 2025-06-23 220157](https://github.com/user-attachments/assets/c1421363-f4b7-442b-ad2c-7c2e67d70c2e)
-![Screenshot 2025-06-23 220213](https://github.com/user-attachments/assets/08120052-b6e1-4175-8aae-a77e495ac02a)
-![Screenshot 2025-06-23 220220](https://github.com/user-attachments/assets/100e402d-2c2e-45e3-a3ed-bdb9a1491fe7)
+![Home Page](./res/Screenshot%202025-12-03%20144230.png)
+![Content](./res/Screenshot%202025-12-03%20144247.png)
+![FAQ](./res/Screenshot%202025-12-03%20144300.png)
+![Footer](./res/Screenshot%202025-12-03%20144308.png)
 
 ## Live Demo
 
